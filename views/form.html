@@ -1,0 +1,90 @@
+
+<div class="app-form">
+
+	<div class="container">
+
+		<div class="btn-group">
+		  <button class="btn btn-default btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		    Tipo de trámite <span class="caret"></span>
+		  </button>
+		  <ul class="dropdown-menu" ng-repeat="tramite in tiposDeTramite">
+		    <li>{{tramite}}</li>
+		  </ul>
+		</div>		
+
+		<div class="input-group">
+		  <span class="input-group-addon" id="basic-addon1"></span>
+		  <input type="text" class="form-control" placeholder="Número de Boleta" aria-describedby="basic-addon1" ng-model="data.numeroBoleta">
+		</div>
+			<div class="input-group">
+		  <span class="input-group-addon" id="basic-addon2"></span>
+		  <input type="text" class="form-control" placeholder="Apellidos" aria-describedby="basic-addon2" ng-model="data.persona.apellido">
+		</div>
+			<div class="input-group">
+		  <span class="input-group-addon" id="basic-addon3"></span>
+		  <input type="text" class="form-control" placeholder="Nombres" aria-describedby="basic-addon3" ng-model="data.persona.nombre">
+		</div>
+			<div class="input-group">
+		  <span class="input-group-addon" id="basic-addon4"></span>
+		  <input type="text" class="form-control" placeholder="DNI" aria-describedby="basic-addon4" ng-model="data.persona.dni">
+		</div>
+		
+		<div>
+			<div class="input-group">
+		  <span class="input-group-addon" id="basic-addon5"></span>
+		  <input type="text" class="form-control" placeholder="Fecha" aria-describedby="basic-addon5" ng-model="data.fecha">
+		</div>
+		<div>
+			<div class="input-group">
+		  <span class="input-group-addon" id="basic-addon5"></span>
+		  <input type="text" class="form-control" placeholder="ID de Trámite" aria-describedby="basic-addon5" ng-model="data.idTramite">
+		</div>
+		<div>
+			<div class="input-group">
+		  <span class="input-group-addon" id="basic-addon5"></span>
+		  <input type="text" class="form-control" placeholder="Calle" aria-describedby="basic-addon5" ng-model="data.domicilio.nombreCalle">
+		</div>
+		<div>
+			<div class="input-group">
+		  <span class="input-group-addon" id="basic-addon5"></span>
+		  <input type="text" class="form-control" placeholder="Número" aria-describedby="basic-addon5" ng-model="data.domicilio.numeroCalle">
+		</div>
+		<div>
+			<div class="input-group">
+		  <span class="input-group-addon" id="basic-addon5"></span>
+		  <input type="text" class="form-control" placeholder="Barrio" aria-describedby="basic-addon5" ng-model="data.domicilio.barrio">
+		</div>
+		<div>
+			<div class="input-group">
+		  <span class="input-group-addon" id="basic-addon5"></span>
+		  <input type="text" class="form-control" placeholder="Ciudad" aria-describedby="basic-addon5" ng-model="data.domicilio.ciudad">
+		</div>
+		<div>
+			<div class="input-group">
+		  <span class="input-group-addon" id="basic-addon5"></span>
+		  <input type="text" class="form-control" placeholder="Localidad" aria-describedby="basic-addon5" ng-model="data.domicilio.localidad">
+		</div>
+		<div>
+			<div class="input-group">
+		  <span class="input-group-addon" id="basic-addon5"></span>
+		  <input type="text" class="form-control" placeholder="Provincia" aria-describedby="basic-addon5" ng-model="data.domicilio.provincia">
+		</div>
+		<div>
+			<div class="input-group">
+		  <span class="input-group-addon" id="basic-addon5"></span>
+		  <input type="text" class="form-control" placeholder="País" aria-describedby="basic-addon5" ng-model="data.domicilio.pais">
+		</div>
+		<div>
+			<div class="input-group">
+		  <span class="input-group-addon" id="basic-addon5"></span>
+		  <input type="text" class="form-control" placeholder="Código Postal" aria-describedby="basic-addon5" ng-model="data.domicilio.codigoPostal">
+		</div>
+
+		<div>
+			<button class="button-send" ng-click="send()">Enviar</button>
+		</div>
+		
+
+	</div>
+
+</div>
